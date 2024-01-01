@@ -1,0 +1,32 @@
+class Employee:
+    def __init__(self, name):
+        self.__name = name  # encapsulated attribute
+
+    def work(self):
+        pass  # abstract method to be implemented by subclasses
+
+
+class Manager(Employee):
+    def work(self):
+        return f"{self._Employee__name} is managing the team."
+
+
+class Developer(Employee):
+    def work(self):
+        return f"{self._Employee__name} is developing code."
+
+
+class Designer(Employee):
+    def work(self):
+        return f"{self._Employee__name} is designing graphics."
+
+
+# Membuat objek untuk setiap kelas turunan
+manager = Manager("Akhmad Sobirin")
+developer = Developer("Arif Rahman")
+designer = Designer("Ade Rizqi")
+
+# Memanggil metode work() pada setiap objek
+print(manager.work())
+print(developer.work())
+print(designer.work())
