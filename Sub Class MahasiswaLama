@@ -1,0 +1,25 @@
+public class MahasiswaLama extends Mahasiswa {
+    // Atribut tambahan untuk MahasiswaLama
+    private int angkatan;
+
+    // Konstruktor
+    public MahasiswaLama(String nama, int umur, int angkatan) {
+        super(nama, umur);
+        this.angkatan = angkatan;
+    }
+
+    // Getter dan setter untuk angkatan
+    public int getAngkatan() {
+        return angkatan;
+    }
+
+    public void setAngkatan(int angkatan) {
+        this.angkatan = angkatan;
+    }
+
+    // Metode untuk menampilkan informasi mahasiswa lama
+    public void display() {
+        System.out.println("Angkatan: " + angkatan);
+        displayInfo();
+    }
+}
