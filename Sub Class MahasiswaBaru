@@ -1,0 +1,25 @@
+public class MahasiswaBaru extends Mahasiswa {
+    // Atribut tambahan untuk MahasiswaBaru
+    private int nim;
+
+    // Konstruktor
+    public MahasiswaBaru(String nama, int umur, int nim) {
+        super(nama, umur);
+        this.nim = nim;
+    }
+
+    // Getter dan setter untuk nim
+    public int getNim() {
+        return nim;
+    }
+
+    public void setNim(int nim) {
+        this.nim = nim;
+    }
+
+    // Metode untuk menampilkan informasi mahasiswa baru
+    public void display() {
+        System.out.println("NIM: " + nim);
+        displayInfo();
+    }
+}
